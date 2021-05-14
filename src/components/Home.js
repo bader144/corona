@@ -8,7 +8,7 @@ class Home extends Component {
       }
     
       componentDidMount() {
-        axios.get(`http://localhost:5000/api/v1/register`)
+        axios.get(`https://corona-tn.herokuapp.com/api/v1/register`)
           .then(res => {
             const persons = res.data.results;
             this.setState({ persons });
